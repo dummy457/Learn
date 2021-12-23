@@ -1,0 +1,70 @@
+
+.ExpenseItem {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    padding: 1.5rem;
+    margin: 1rem 0.5rem;
+    border-radius: 12px;
+    background-color: #4b4b4b57;
+    border: 1px solid gold;
+
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+}
+
+.ExpenseItem:hover {
+    background-color: #4b4b4bc2;
+    border: 1px solid darkgoldenrod;
+
+}
+
+.ExpenseItem_product {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.ExpenseItem h2{
+        color: wheat;
+        font-size: 1rem;
+        flex: 1;
+        margin: 0 1rem;
+}
+
+.ExpenseItem_amt {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: darkbrown;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 12px;
+}
+
+@media (min-width: 580px){
+    .ExpenseItem_product {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .ExpenseItem_product h2 {
+        font-size: 1.25rem;
+    }
+
+    .ExpenseItem_amt {
+        font-size: 1.25rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
